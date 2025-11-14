@@ -1,8 +1,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: <%= ENV['RAILS_POSTGRESQL_EXAMPLE_DATABASE_USERNAME'] %>
-  password: <%= ENV['RAILS_POSTGRESQL_EXAMPLE_DATABASE_PASSWORD'] %>
+  username: <%= ENV["RAILS_POSTGRESQL_EXAMPLE_DATABASE_USERNAME"] %>
+  password: <%= ENV["RAILS_POSTGRESQL_EXAMPLE_DATABASE_PASSWORD"] %>
   max_connections: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
